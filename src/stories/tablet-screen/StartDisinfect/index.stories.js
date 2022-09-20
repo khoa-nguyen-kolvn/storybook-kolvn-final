@@ -11,6 +11,6 @@ export default {
 
 const Template = args => <StartDisinfect {...args} />;
 
-export const Defautl = Template.bind({});
-Defautl.args = {};
+export const Default = Template.bind({});
+Default.args = {};
 

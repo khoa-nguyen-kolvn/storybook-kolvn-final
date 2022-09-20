@@ -1,20 +1,22 @@
 import React from 'react';
 import { Divider } from 'antd';
 import DeviceLayout from 'layouts/TabletScreenLayout';
+import returnDevice from 'layouts/media/return-device.png';
+import completed from 'layouts/media/completed-icon.png';
 
-const CompleteScreen = ({ isFailed }) => {
+const Complete = ({ isFailed }) => {
   return (
     <DeviceLayout>
       <div className={!isFailed ? 'screen complete-screen' : 'screen complete-screen failed'}>
         <header>
-          <img alt="completed" />
+          <img src={completed} alt="completed" />
           <p>Disinfection</p>
           <Divider />
           <h1>{!isFailed ? 'SUCCESS' : 'FAIL'}</h1>
         </header>
         <main>
           <div className="circle-icon">
-            <img alt="return device" />
+            <img src={returnDevice} alt="return device" />
           </div>
         </main>
         <footer>Return safety device and follow instructions on the robot</footer>
@@ -23,4 +25,4 @@ const CompleteScreen = ({ isFailed }) => {
   );
 };
 
-export default CompleteScreen;
+export default Complete;

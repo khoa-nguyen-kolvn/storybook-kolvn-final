@@ -1,16 +1,18 @@
 import React from 'react';
-import DeviceLayout from 'layouts/TabletScreenLayout';
+import DeviceLayout from 'layouts/Tablet';
+import logo from 'layouts/media/logo-icon-blue.svg';
 
-const Idle = () => {
+const IdleScreen = () => {
   return (
     <DeviceLayout>
-        <header>
-          <img alt="idle-screen" />
-        </header>
+      <div
+        className="screen idle-screen"
+      >
         <main>
+          <img src={logo} alt="logo" />
         </main>
+      </div>
     </DeviceLayout>
   );
 };
-
-export default Idle;
+export default IdleScreen;

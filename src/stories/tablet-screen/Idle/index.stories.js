@@ -11,5 +11,7 @@ export default {
 
 const Template = args => <Idle {...args} />;
 
-export const IdleScreen = Template.bind({});
+export const Default = Template.bind({});
+Default.args = {};
+
 

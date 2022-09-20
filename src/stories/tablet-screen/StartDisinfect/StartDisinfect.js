@@ -1,11 +1,9 @@
 import React from 'react';
 import { Divider } from 'antd';
-import { useTranslation } from 'react-i18next';
-import DisinfectionProgress from 'pages/safety_device/disinfecting_screen/DisinfectionProgress';
+import DisinfectionProgress from 'pages/safety_device/disinfecting_progress/DisinfectionProgress';
 import DeviceLayout from 'layouts/TabletScreenLayout';
 
-const StartScreen = ({ spots }) => {
-  const { t } = useTranslation();
+const StartScreen = () => {
   return (
     <DeviceLayout>
       <div className="screen start-screen">
@@ -15,7 +13,7 @@ const StartScreen = ({ spots }) => {
           <p>DISINFECTING</p>
         </header>
         <main>
-          <DisinfectionProgress t={t} percent={0} text="Hold to Begin" time="08:45" spots={spots} />
+          <DisinfectionProgress percent={0} text="Hold to Begin Disinfection" time="08:45"/>
         </main>
         <footer />
       </div>
