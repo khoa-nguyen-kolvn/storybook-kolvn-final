@@ -1,0 +1,46 @@
+$color-primary: #00b2e3;
+.robot-screen-layout {
+  height: 100vh;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  // MENU
+  .main-menu {
+    display: flex;
+    width: 100%;
+    background: #00b2e3;
+    box-shadow: 0 0 20px rgba(#000, 0.2);
+    height: 68px;
+    align-items: center;
+    .logo {
+      color: #fff;
+      padding: 0 20px;
+      img {
+        fill: #fff;
+      }
+    }
+    .actions {
+      color: #fff;
+      display: flex;
+      flex: 1;
+      justify-content: flex-end;
+
+      .ant-btn {
+        border: none;
+        box-shadow: 0 1px rgba(#000, 0.1);
+      }
+
+      .action-item {
+        border-left: 1px solid rgba(#000, 0.1);
+        padding: 0 20px;
+        height: 68px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        cursor: pointer;
+      }
+    }
+  }
+}
