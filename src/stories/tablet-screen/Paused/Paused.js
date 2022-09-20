@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button, Divider } from 'antd';
+import DisinfectionProgress from 'pages/safety_device/disinfecting_progress/DisinfectionProgress';
 import DeviceLayout from 'layouts/TabletScreenLayout';
 
 const PauseScreen = () => {
@@ -11,7 +12,7 @@ const PauseScreen = () => {
           <Divider />
         </header>
         <main>
-          <p>Resume disinfection on safety device</p>
+        <DisinfectionProgress percent={50} text="Press to Resume" time="05:00"/>
         </main>
         <footer>
           <Button danger block size="large">
