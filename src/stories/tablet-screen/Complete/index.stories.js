@@ -12,6 +12,9 @@ export default {
 const Template = args => <Complete {...args} />;
 
 export const Success = Template.bind({});
+Success.arg = {
+  isSuccess: true
+};
 
 export const Fail = Template.bind({});
 Fail.args = {
