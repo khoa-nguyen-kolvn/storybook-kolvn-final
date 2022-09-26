@@ -43,4 +43,52 @@ $color-primary: #00b2e3;
       }
     }
   }
+  
+  // Add Operator Page
+.add-operator-page {
+  main {
+    padding: 20px;
+
+    .ant-form-item {
+      flex-direction: row;
+    }
+    .ant-form-item-row {
+      flex-direction: row;
+    }
+  }
+}
+
+// Adjust Map Layout
+.adjust-map-page {
+  main {
+    .ant-form-item {
+      flex-direction: row;
+    }
+    .ant-form-item-row {
+      flex-direction: row;
+    }
+  }
+}
+  
+// Group Page
+.groups-page {
+  main {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 10%;
+      font-size: 24px;
+      text-align: center;
+    }
+}
+
+// Prepare to Disinfect Layout
+.prepare-to-disinfect-page {
+  main {
+    display: block !important;
+
+      .ant-form-item {
+        margin-bottom: 30px;
+      }
+    }
 }
